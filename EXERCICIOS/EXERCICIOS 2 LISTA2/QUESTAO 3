@@ -1,0 +1,44 @@
+Questão 3)
+
+1) int dadosSensor[10];
+
+2) Função dadosSensor[3] = analogRead(A1);: Atribui a leitura analógica do pino A1 ao quarto elemento do vetor dadosSensor. Isso pode ser útil para armazenar leituras sequenciais em um array.
+
+3) float valoresMedidos[5] = {25.5, 26.0, 24.8, 27.3, 26.5};
+
+4) for (int indice = 0; indice < 4; indice++) {
+    Serial.println(pinosLED[indice]);
+}
+
+
+
+5) void setup() {
+    Serial.begin(9600);
+    int pinosLED[] = {2, 3, 4, 5};
+    for (int indice = 0; indice < 4; indice++) {
+        Serial.println(pinosLED[indice]);
+    }
+}
+
+void loop() {
+    // Nenhuma operação adicional.
+}
+
+
+
+6) int valoresAleatorios[5];
+for (int indice = 0; indice < 5; indice++) {
+    valoresAleatorios[indice] = random(0, 100); // Gera valores entre 0 e 99.
+}
+
+
+
+7) for (int indice = 0; indice < tamanhoArray; indice++) {
+    if (leiturasSensores[indice] == 150) {
+        break; // Interrompe o laço se o valor 150 for encontrado.
+    }
+}
+
+
+
+8) Função de sizeof: A instrução sizeof(dadosVetores) / sizeof(dadosVetores[0]) retorna o número total de elementos de um vetor. A divisão é necessária porque sizeof(dadosVetores) retorna o tamanho total em bytes, e sizeof(dadosVetores[0]) fornece o tamanho de um único elemento.
