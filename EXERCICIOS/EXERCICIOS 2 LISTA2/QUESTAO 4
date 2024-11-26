@@ -1,0 +1,20 @@
+Questão 4)
+
+a) Interpretação da primeira linha: Representa as leituras de temperatura, em graus Celsius, coletadas em cinco momentos diferentes para o primeiro local de monitoramento.
+
+b) float mediaUmidade = (45 + 38 + 42 + 40 + 37) / 5.0;
+
+c) Momento do valor máximo de CO2: O maior valor é 420 ppm, registrado no terceiro momento.
+
+d) int totalLocais = 3;
+int totalMomentos = 5;
+int somaTemp = 0;
+
+for (int local = 0; local < totalLocais; local++) {
+    for (int momento = 0; momento < totalMomentos; momento++) {
+        somaTemp += dadosAmbiente[local][momento];
+    }
+}
+float mediaTemperaturas = somaTemp / (totalLocais * totalMomentos);
+Serial.println("Media das temperaturas: ");
+Serial.println(mediaTemperaturas);
